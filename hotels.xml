@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+  <Hotel>
+    <name>Sammy's palace</name>
+    <address>Miami</address>
+    <id>001</id>
+  </Hotel>
+</ArrayOfHotel>
