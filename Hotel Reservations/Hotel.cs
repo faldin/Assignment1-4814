@@ -21,7 +21,7 @@ namespace Hotel_Reservations
 
             this.name = name;
             this.address = address;
-            this.id = id; testc!
+            this.id = id;
 
         }
     }
