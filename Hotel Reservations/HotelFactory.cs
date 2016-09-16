@@ -16,17 +16,12 @@ namespace Hotel_Reservations
 
             List<Hotel> hotelList = new List<Hotel>(10);
 
-            int i = 1;
+            
 
-            do {
-                Hotel aHotel = new Hotel("Sammy's palace", "Miami", "001");
+
+
 
                 hotelList.Add(aHotel);
-
-                i++;
-
-            } while (i <= 10);
-
 
 
             StreamWriter writer = new StreamWriter("../../hotels.xml");

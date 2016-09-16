@@ -12,6 +12,8 @@ namespace Hotel_Reservations
         public Boolean laundry { get; set; }
         public Boolean aircon { get; set; }
         public Boolean breakfast { get; set; }
+        public Boolean shuttle { get; set; }
+
 
         public Features() { }
 

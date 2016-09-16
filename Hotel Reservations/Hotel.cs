@@ -13,15 +13,18 @@ namespace Hotel_Reservations
         public string name { get; set; }
         public string address { get; set; }
         public string id { get; set; }
+        public Features features {get; set;}
 
-        public Hotel() { }
 
-        public Hotel(string name, string address, string id)
+        Hotel() { }
+
+        public Hotel(string name, string address, string id, Features features)
         {
 
             this.name = name;
             this.address = address;
             this.id = id;
+            this.features = features;
 
         }
     }
