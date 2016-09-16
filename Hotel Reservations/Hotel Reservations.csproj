@@ -52,6 +52,7 @@
     <Compile Include="BrowserForm.Designer.cs">
       <DependentUpon>BrowserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="Distances.cs" />
     <Compile Include="Features.cs" />
@@ -63,7 +64,6 @@
     </Compile>
     <Compile Include="Hotel.cs" />
     <Compile Include="HotelFactory.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BrowserForm.resx">
       <DependentUpon>BrowserForm.cs</DependentUpon>

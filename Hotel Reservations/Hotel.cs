@@ -18,7 +18,26 @@ namespace Hotel_Reservations
         public List<Room> listOfRooms { get; set;}
 
 
-        public Hotel() { }
+        public Hotel() {
+
+            this.features = features;
+            this.distances = distances;
+            this.listOfRooms = listOfRooms;
+            this.features.laundry = true;
+            this.features.aircon = true;
+            this.features.breakfast = true;
+            this.features.shuttle = true;
+            this.distances.beach = 10;
+            this.distances.shopping = 2;
+            this.distances.airport = 7;
+
+            for (int i = 0; i < i + 4; i++)
+            {
+                Room room1 = new Room("KB", 1 + i, i + "/" + i + 1);
+                this.listOfRooms.Add(room1);
+            }
+
+        }
 
         public Hotel(string name, string address, string id, Features features, Distances distances, List<Room> listOfRooms)
         {

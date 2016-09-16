@@ -17,8 +17,8 @@ namespace Hotel_Reservations
             List<Hotel> hotelList = new List<Hotel>(10);
 
 
-            Hotel aHotel = new Hotel()
-            {
+            Hotel aHotel = new Hotel();
+            
 
             aHotel.name = "Old Glory";
             aHotel.address = "10601 sw 48 st";
@@ -31,21 +31,14 @@ namespace Hotel_Reservations
             aHotel.distances.shopping = 2;
             aHotel.distances.airport = 7;
 
-
-                for (int i = 0; i < 4; i++) {
-                    Room room1 = new Room("KB", 1+i, "0/2");
-
+                for (int i = 0; i < i+4; i++) {
+                    Room room1 = new Room("KB", 1+i, i+"/"+i+1);
+                    aHotel.listOfRooms.Add(room1);
                 }
 
+            hotelList.Add(aHotel);
 
-
-            }
-
-
-
-
-
-                hotelList.Add(aHotel);
+        
 
 
             StreamWriter writer = new StreamWriter("../../hotels.xml");
