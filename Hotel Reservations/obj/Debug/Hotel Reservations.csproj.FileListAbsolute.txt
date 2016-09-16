@@ -18,3 +18,13 @@ D:\Dropbox\Classes\Fall 2016\cop 4814\Assignments\Solution - Asg 1\Hotel Reserva
 \\buffalo.cs.fiu.edu\homes\Desktop\COP 4814\Hotel Reservations - Start\Hotel Reservations\bin\Debug\Hotel Reservations.exe
 \\buffalo.cs.fiu.edu\homes\Desktop\COP 4814\Hotel Reservations - Start\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
 \\buffalo.cs.fiu.edu\homes\Desktop\COP 4814\Hotel Reservations - Start\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+\\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache
