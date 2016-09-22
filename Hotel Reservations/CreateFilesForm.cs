@@ -35,7 +35,7 @@ namespace Hotel_Reservations
         private void btnDisplayInventory_Click(object sender, EventArgs e)
         {
             BrowserForm frm = new BrowserForm();
-            frm.URL = "roominventory.xml";
+            frm.URL = "roomInventory.xml";
             frm.ShowDialog();
         }
 

@@ -38,3 +38,13 @@ D:\Dropbox\Classes\Fall 2016\cop 4814\Assignments\Solution - Asg 1\Hotel Reserva
 \\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache
 \\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
 \\buffalo.cs.fiu.edu\homes\Documents\GitHubVisualStudio\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache
