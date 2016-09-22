@@ -31,24 +31,43 @@ namespace Hotel_Reservations
             aHotel.distances.shopping = 2;
             aHotel.distances.airport = 7;
 
-                for (int i = 0; i < i+4; i++) {
+
+            List<InventoryType> inventoryList = new List<InventoryType>();
+
+            for (int i = 0; i < i+4; i++) {
                     Room room1 = new Room("KB", 1+i, i+"/"+i+1);
                     aHotel.listOfRooms.Add(room1);
-                }
+
+                InventoryType anInventory = new InventoryType();
+
+                anInventory.Date = "09222016";
+                anInventory.Quantity = 10;
+                anInventory.HotelId = aHotel.id;
+                anInventory.RoomType = room1.type;
+
+                inventoryList.Add(anInventory);
+            }
 
             hotelList.Add(aHotel);
 
-        
+            StreamWriter writer = new StreamWriter("../../roominventory.xml");
+            XmlSerializer serializer = new XmlSerializer(inventoryList.GetType());
+            serializer.Serialize(writer, inventoryList);
 
 
-            StreamWriter writer = new StreamWriter("../../hotels.xml");
-            XmlSerializer serializer = new XmlSerializer(hotelList.GetType());
-            serializer.Serialize(writer, hotelList);
+            StreamWriter writerb = new StreamWriter("../../hotels.xml");
+            XmlSerializer serializerb = new XmlSerializer(hotelList.GetType());
+            serializerb.Serialize(writerb, hotelList);
+
 
 
 
             return true;
         }
+
+
+
+
 
 
 

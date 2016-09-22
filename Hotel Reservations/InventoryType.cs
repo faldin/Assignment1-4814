@@ -13,7 +13,7 @@ public class InventoryType
 {
 
     public string Date { get; set; }
-    public int HotelId { get; set; }
+    public string HotelId { get; set; }
     public string RoomType { get; set; }
     public int Quantity { get; set; }
 
@@ -21,7 +21,7 @@ public class InventoryType
 
     public InventoryType() { }
 
-    public InventoryType(string Date, int HotelId, string RoomType, int Quantity)
+    public InventoryType(string Date, string HotelId, string RoomType, int Quantity)
     {
 
         this.Date = Date;
