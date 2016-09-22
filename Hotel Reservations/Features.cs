@@ -9,21 +9,25 @@ namespace Hotel_Reservations
     public class Features
     {
 
-        public Boolean laundry { get; set; }
-        public Boolean aircon { get; set; }
-        public Boolean breakfast { get; set; }
-        public Boolean shuttle { get; set; }
+        public bool laundry { get; set; }
+        public bool aircon { get; set; }
+        public bool breakfast { get; set; }
+        public bool shuttle { get; set; }
 
 
         public Features() { }
 
-        public Features(Boolean laundry, Boolean aircon, Boolean breakfast, Boolean shuttle)
+
+        public Features(bool laundry, bool aircon, bool breakfast, bool shuttle)
         {
+
+            laundry = new bool();
 
             this.laundry = laundry;
             this.aircon = aircon;
             this.breakfast = breakfast;
             this.shuttle = shuttle;
+
 
         }
     }
