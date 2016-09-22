@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel_Reservations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +19,24 @@ namespace Hotel_Reservations
         public List<Room> listOfRooms { get; set;}
 
 
-        public Hotel() {
+        public Hotel()
+        {
+            this.name = name;
+            this.address = address;
+            this.id = id;
+            this.features = features;
+            this.distances = distances;
+            this.listOfRooms = listOfRooms;
+            this.features.laundry = new Boolean();
 
+        }
+
+        public Hotel(string name, string address, string id)
+        {
+
+            this.name = name;
+            this.address = address;
+            this.id = id;
             this.features = features;
             this.distances = distances;
             this.listOfRooms = listOfRooms;
@@ -30,24 +47,6 @@ namespace Hotel_Reservations
             this.distances.beach = 10;
             this.distances.shopping = 2;
             this.distances.airport = 7;
-
-            for (int i = 0; i < i + 4; i++)
-            {
-                Room room1 = new Room("KB", 1 + i, i + "/" + i + 1);
-                this.listOfRooms.Add(room1);
-            }
-
-        }
-
-        public Hotel(string name, string address, string id, Features features, Distances distances, List<Room> listOfRooms)
-        {
-
-            this.name = name;
-            this.address = address;
-            this.id = id;
-            this.features = features;
-            this.distances = distances;
-            this.listOfRooms = listOfRooms;
 
 
         }
