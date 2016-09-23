@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfHotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfHotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hotel>
+    <name>Old Glory</name>
+    <address>10601 sw 48 st</address>
+    <id>001</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>10</beach>
+      <shopping>2</shopping>
+      <airport>7</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KB</type>
+        <dailyRate>50</dailyRate>
+        <capacity>2/5</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+</ArrayOfHotel>

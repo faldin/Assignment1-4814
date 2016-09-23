@@ -21,8 +21,6 @@ namespace Hotel_Reservations
         public Features(bool laundry, bool aircon, bool breakfast, bool shuttle)
         {
 
-            laundry = new bool();
-
             this.laundry = laundry;
             this.aircon = aircon;
             this.breakfast = breakfast;

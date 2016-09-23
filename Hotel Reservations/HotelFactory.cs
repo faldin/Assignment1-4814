@@ -16,43 +16,60 @@ namespace Hotel_Reservations
 
             List<Hotel> hotelList = new List<Hotel>(10);
 
-
-            Hotel aHotel = new Hotel();
+            //Hotel 1
+            Hotel aHotel1 = new Hotel();
             
 
-            aHotel.name = "Old Glory";
-            aHotel.address = "10601 sw 48 st";
-            aHotel.id = "001";
-            aHotel.features.laundry = true;
-            aHotel.features.aircon = true;
-            aHotel.features.breakfast = true;
-            aHotel.features.shuttle = true;
-            aHotel.distances.beach = 10;
-            aHotel.distances.shopping = 2;
-            aHotel.distances.airport = 7;
+            aHotel1.name = "Old Glory";
+            aHotel1.address = "10601 sw 48 st";
+            aHotel1.id = "001";
+            aHotel1.varfeatures.laundry = true;
+            aHotel1.varfeatures.aircon = true;
+            aHotel1.varfeatures.breakfast = true;
+            aHotel1.varfeatures.shuttle = true;
+            aHotel1.distances.beach = 10;
+            aHotel1.distances.shopping = 2;
+            aHotel1.distances.airport = 7;
 
 
-            List<InventoryType> inventoryList = new List<InventoryType>();
+            
+                    Room h1room1 = new Room();
+                    h1room1.capacity = "2/5";
+                    h1room1.dailyRate = 50;
+                    h1room1.type = "KB";
+                    
+               aHotel1.listOfRooms.Add(h1room1);
 
-            for (int i = 0; i < i+4; i++) {
-                    Room room1 = new Room("KB", 1+i, i+"/"+i+1);
-                    aHotel.listOfRooms.Add(room1);
+               hotelList.Add(aHotel1);
 
-                InventoryType anInventory = new InventoryType();
 
-                anInventory.Date = "09222016";
-                anInventory.Quantity = 10;
-                anInventory.HotelId = aHotel.id;
-                anInventory.RoomType = room1.type;
 
-                inventoryList.Add(anInventory);
-            }
+            //Hotel 2
+            Hotel aHotel2 = new Hotel();
 
-            hotelList.Add(aHotel);
 
-            StreamWriter writer = new StreamWriter("../../roominventory.xml");
-            XmlSerializer serializer = new XmlSerializer(inventoryList.GetType());
-            serializer.Serialize(writer, inventoryList);
+            aHotel2.name = "Oldest Glory";
+            aHotel2.address = "66954 nw 98 st";
+            aHotel2.id = "002";
+            aHotel2.varfeatures.laundry = false;
+            aHotel2.varfeatures.aircon = true;
+            aHotel2.varfeatures.breakfast = false;
+            aHotel2.varfeatures.shuttle = true;
+            aHotel2.distances.beach = 3;
+            aHotel2.distances.shopping = 9;
+            aHotel2.distances.airport = 4;
+
+
+
+            Room h2room1 = new Room();
+            h2room1.capacity = "5/8";
+            h2room1.dailyRate = 80;
+            h2room1.type = "QB";
+
+            aHotel2.listOfRooms.Add(h2room1);
+
+            hotelList.Add(aHotel2);
+
 
 
             StreamWriter writerb = new StreamWriter("../../hotels.xml");

@@ -14,7 +14,7 @@ namespace Hotel_Reservations
         public string name { get; set; }
         public string address { get; set; }
         public string id { get; set; }
-        public Features features {get; set;}
+        public Features varfeatures {get; set;}
         public Distances distances { get; set;}
         public List<Room> listOfRooms { get; set;}
 
@@ -24,10 +24,9 @@ namespace Hotel_Reservations
             this.name = name;
             this.address = address;
             this.id = id;
-            this.features = features;
-            this.distances = distances;
-            this.listOfRooms = listOfRooms;
-            this.features.laundry = new Boolean();
+            this.varfeatures = new Features();
+            this.distances = new Distances();
+            this.listOfRooms = new List<Room>();
 
         }
 
@@ -37,16 +36,9 @@ namespace Hotel_Reservations
             this.name = name;
             this.address = address;
             this.id = id;
-            this.features = features;
-            this.distances = distances;
-            this.listOfRooms = listOfRooms;
-            this.features.laundry = true;
-            this.features.aircon = true;
-            this.features.breakfast = true;
-            this.features.shuttle = true;
-            this.distances.beach = 10;
-            this.distances.shopping = 2;
-            this.distances.airport = 7;
+            this.varfeatures = new Features();
+            this.distances = new Distances();
+            this.listOfRooms = new List<Room>();
 
 
         }
