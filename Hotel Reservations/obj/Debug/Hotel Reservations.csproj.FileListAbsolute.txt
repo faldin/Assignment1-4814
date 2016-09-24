@@ -48,3 +48,11 @@ C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_
 C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
 C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
 C:\Users\Eddie\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache

@@ -21,8 +21,8 @@ namespace Hotel_Reservations
 
             anInventory.Date = "09222016";
             anInventory.Quantity = 10;
-            anInventory.HotelId = aHotel.id;
-            anInventory.RoomType = room1.type;
+            anInventory.HotelId = aHotel1.id;
+            anInventory.RoomType = h1room1.type;
 
             inventoryList.Add(anInventory);
 
