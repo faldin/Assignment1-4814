@@ -80,8 +80,6 @@ namespace Hotel_Reservations
             aHotel2.distances.shopping = 9;
             aHotel2.distances.airport = 4;
 
-
-
             Room h2room1 = new Room();
             h2room1.capacity = "1/4";
             h2room1.dailyRate = 55;
