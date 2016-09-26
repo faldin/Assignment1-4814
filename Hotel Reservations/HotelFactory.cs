@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace Hotel_Reservations
 {
-    class HotelFactory
+    public class HotelFactory
     {
         public bool CreateHotelFile()
         {

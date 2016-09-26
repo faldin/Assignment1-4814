@@ -56,6 +56,8 @@ namespace Hotel_Reservations
         private void btnCreateInventory_Click(object sender, EventArgs e)
         {
 
+            RoomFactory rooms = new RoomFactory();
+            rooms.createRooms();
 
 
         }
