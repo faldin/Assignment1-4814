@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
+//Samuel van Dalen and Eduardo Martinez
+
 namespace Hotel_Reservations
 {
     public class RoomFactory

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Samuel van Dalen and Eduardo Martinez
 namespace Hotel_Reservations
 {
 

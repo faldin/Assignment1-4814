@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Samuel van Dalen and Eduardo Martinez
 namespace Hotel_Reservations
 {
     static class Program
