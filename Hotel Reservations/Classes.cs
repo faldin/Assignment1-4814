@@ -946,6 +946,13 @@ namespace Hotel_Reservations
             h1room1.dailyRate = 50;
             h1room1.type = "KB";
 
+            aHotel1.listOfRooms.Add(h1room1);
+
+            Room h1room2 = new Room();
+            h1room2.capacity = "1/3";
+            h1room2.dailyRate = 45;
+            h1room2.type = "QB";
+
             aHotel1.listOfRooms.Add(h1room2);
 
             Room h1room3 = new Room();
