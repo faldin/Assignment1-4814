@@ -1504,6 +1504,12 @@ namespace Hotel_Reservations
         }
     }
 
+    public class RoomDeSerializer
+    {
+
+
+    }
+
 
 
 
