@@ -67,22 +67,20 @@
     <Compile Include="BrowserForm.Designer.cs">
       <DependentUpon>BrowserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="InventoryType.cs" />
+    <Compile Include="Classes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Room.cs" />
-    <Compile Include="Distances.cs" />
-    <Compile Include="Features.cs" />
     <Compile Include="CreateFilesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreateFilesForm.Designer.cs">
       <DependentUpon>CreateFilesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hotel.cs" />
-    <Compile Include="HotelFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoomFactory.cs" />
     <EmbeddedResource Include="BrowserForm.resx">
       <DependentUpon>BrowserForm.cs</DependentUpon>
     </EmbeddedResource>

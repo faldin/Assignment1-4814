@@ -30,44 +30,49 @@ namespace Hotel_Reservations
             InitializeComponent();
         }
 
-        private void btnDisplayHotels_Click(object sender, EventArgs e)
+    
+
+        private void CreateFilesForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void buildHotelsxmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HotelFactory factory = new HotelFactory();
+            factory.CreateHotelFile();
+        }
+
+        private void buildRoominventoryxmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RoomFactory rooms = new RoomFactory();
+            rooms.createRooms();
+        }
+
+        private void displayHotelsxmlToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BrowserForm frm = new BrowserForm();
             frm.URL = "hotels.xml";
             frm.ShowDialog();
         }
 
-        private void btnDisplayInventory_Click(object sender, EventArgs e)
+        private void displayRoominventoryxmlToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BrowserForm frm = new BrowserForm();
             frm.URL = "roomInventory.xml";
             frm.ShowDialog();
         }
 
-
-
-
-        private void btnCreateHotels_Click(object sender, EventArgs e)
+        private void btnLoadHotelsFile_Click(object sender, EventArgs e)
         {
-            HotelFactory factory = new HotelFactory();
-            factory.CreateHotelFile();
-
-
-
+            //Placeholder
         }
 
-
-
-        private void btnCreateInventory_Click(object sender, EventArgs e)
+        private void btnDisplayHotels_Click(object sender, EventArgs e)
         {
-
-            RoomFactory rooms = new RoomFactory();
-            rooms.createRooms();
-
-
+            //Placeholder
         }
-
-
     }
 }
 
