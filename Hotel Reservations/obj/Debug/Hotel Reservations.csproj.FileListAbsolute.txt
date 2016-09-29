@@ -61,3 +61,6 @@ C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel
 \\vmware-host\Shared Folders\Desktop\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
 C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
 C:\Users\Samuel\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+C:\Users\Farah\Source\Repos\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+C:\Users\Farah\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+C:\Users\Farah\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb

@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace Hotel_Reservations
@@ -1506,6 +1507,20 @@ namespace Hotel_Reservations
 
     public class RoomDeSerializer
     {
+
+        //string path = "RoomFactory.xml";
+        //StreamReader reader = new StreamReader(path);
+
+        XmlSerializer serializer = new
+        XmlSerializer(typeof(RoomFactory);
+
+        FileStream fs = new FileStream(filename, FileMode.Open);
+        XmlReader reader = XmlReader.Create(fs);
+        RoomFactory roomlist;
+
+        roomlist = (RoomFactory)serializer.Deserialize(reader);
+        fs.Close();
+        
 
 
     }
