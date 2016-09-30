@@ -66,7 +66,8 @@ namespace Hotel_Reservations
 
         private void btnLoadHotelsFile_Click(object sender, EventArgs e)
         {
-            //Placeholder
+            ShowHotels hotelShow = new ShowHotels();
+            hotelShow.hotelShower();
         }
 
         private void btnDisplayHotels_Click(object sender, EventArgs e)

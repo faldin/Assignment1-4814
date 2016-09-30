@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hotel>
+    <name>Old Glory</name>
+    <address>10601 sw 48 st</address>
+    <id>001</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>10</beach>
+      <shopping>2</shopping>
+      <airport>7</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>50</dailyRate>
+        <capacity>2/5</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>1/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>1/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldest Glory</name>
+    <address>66954 nw 98 st</address>
+    <id>002</id>
+    <varfeatures>
+      <laundry>false</laundry>
+      <aircon>true</aircon>
+      <breakfast>false</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>3</beach>
+      <shopping>9</shopping>
+      <airport>4</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>1/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>1/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldester Glory</name>
+    <address>84920 w 8 st</address>
+    <id>003</id>
+    <varfeatures>
+      <laundry>false</laundry>
+      <aircon>true</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>false</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>5</beach>
+      <shopping>1</shopping>
+      <airport>2</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>1/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>1/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesterest Glory</name>
+    <address>82430 w 90 st</address>
+    <id>004</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>4</beach>
+      <shopping>3</shopping>
+      <airport>2</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>1/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>1/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Glory</name>
+    <address>11832 nw 12 st</address>
+    <id>005</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>false</breakfast>
+      <shuttle>false</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>4</beach>
+      <shopping>3</shopping>
+      <airport>3</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Glories</name>
+    <address>11234 nw 14 st</address>
+    <id>006</id>
+    <varfeatures>
+      <laundry>false</laundry>
+      <aircon>false</aircon>
+      <breakfast>false</breakfast>
+      <shuttle>false</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>4</beach>
+      <shopping>3</shopping>
+      <airport>3</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Gloriesest</name>
+    <address>98274 nw 16 st</address>
+    <id>007</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>false</aircon>
+      <breakfast>false</breakfast>
+      <shuttle>false</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>5</beach>
+      <shopping>3</shopping>
+      <airport>4</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Gloriesester</name>
+    <address>11234 nw 14 st</address>
+    <id>008</id>
+    <varfeatures>
+      <laundry>false</laundry>
+      <aircon>false</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>7</beach>
+      <shopping>9</shopping>
+      <airport>600</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Gloriesesterest</name>
+    <address>11234 nw 14 st</address>
+    <id>009</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>false</breakfast>
+      <shuttle>false</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>4</beach>
+      <shopping>3</shopping>
+      <airport>3</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+  <Hotel>
+    <name>Oldesteresting Gloriesesteresters</name>
+    <address>13370 sw 9 st</address>
+    <id>010</id>
+    <varfeatures>
+      <laundry>true</laundry>
+      <aircon>true</aircon>
+      <breakfast>true</breakfast>
+      <shuttle>true</shuttle>
+    </varfeatures>
+    <distances>
+      <beach>4</beach>
+      <shopping>5</shopping>
+      <airport>6</airport>
+    </distances>
+    <listOfRooms>
+      <Room>
+        <type>KING SIZED BED</type>
+        <dailyRate>45</dailyRate>
+        <capacity>2/4</capacity>
+      </Room>
+      <Room>
+        <type>TWIN SIZED BED</type>
+        <dailyRate>35</dailyRate>
+        <capacity>1/2</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>55</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+      <Room>
+        <type>QUEEN SIZED BED</type>
+        <dailyRate>40</dailyRate>
+        <capacity>2/3</capacity>
+      </Room>
+    </listOfRooms>
+  </Hotel>
+</ArrayOfHotel>
