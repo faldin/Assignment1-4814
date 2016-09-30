@@ -1508,23 +1508,28 @@ namespace Hotel_Reservations
     public class RoomDeSerializer
     {
 
-        //string path = "RoomFactory.xml";
-        //StreamReader reader = new StreamReader(path);
+        public bool deSerialzeNow()
+        {
 
-        XmlSerializer serializer = new
-        XmlSerializer(typeof(RoomFactory);
 
-        FileStream fs = new FileStream(filename, FileMode.Open);
-        XmlReader reader = XmlReader.Create(fs);
-        RoomFactory roomlist;
 
-        roomlist = (RoomFactory)serializer.Deserialize(reader);
-        fs.Close();
+            XmlSerializer ser = new XmlSerializer(typeof(HotelFactory));
+            HotelFactory roomlist = new HotelFactory();
+            using (XmlReader reader = XmlReader.Create("../../Hotels.xml"))
+            {
+                roomlist = (HotelFactory)ser.Deserialize(reader);
+            }
+
+            return true;
+
+
+        }
+
+            
+
         
 
-
     }
-
 
 
 

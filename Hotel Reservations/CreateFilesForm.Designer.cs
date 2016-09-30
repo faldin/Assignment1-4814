@@ -37,6 +37,7 @@
             this.displayRoominventoryxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDisplayHotels = new System.Windows.Forms.Button();
             this.btnLoadHotelsFile = new System.Windows.Forms.Button();
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,8 @@
             this.buildHotelsxmlToolStripMenuItem,
             this.buildRoominventoryxmlToolStripMenuItem,
             this.displayHotelsxmlToolStripMenuItem,
-            this.displayRoominventoryxmlToolStripMenuItem});
+            this.displayRoominventoryxmlToolStripMenuItem,
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -73,28 +75,28 @@
             // buildHotelsxmlToolStripMenuItem
             // 
             this.buildHotelsxmlToolStripMenuItem.Name = "buildHotelsxmlToolStripMenuItem";
-            this.buildHotelsxmlToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.buildHotelsxmlToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
             this.buildHotelsxmlToolStripMenuItem.Text = "Build Hotels.xml";
             this.buildHotelsxmlToolStripMenuItem.Click += new System.EventHandler(this.buildHotelsxmlToolStripMenuItem_Click);
             // 
             // buildRoominventoryxmlToolStripMenuItem
             // 
             this.buildRoominventoryxmlToolStripMenuItem.Name = "buildRoominventoryxmlToolStripMenuItem";
-            this.buildRoominventoryxmlToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.buildRoominventoryxmlToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
             this.buildRoominventoryxmlToolStripMenuItem.Text = "Build Roominventory.xml";
             this.buildRoominventoryxmlToolStripMenuItem.Click += new System.EventHandler(this.buildRoominventoryxmlToolStripMenuItem_Click);
             // 
             // displayHotelsxmlToolStripMenuItem
             // 
             this.displayHotelsxmlToolStripMenuItem.Name = "displayHotelsxmlToolStripMenuItem";
-            this.displayHotelsxmlToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.displayHotelsxmlToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
             this.displayHotelsxmlToolStripMenuItem.Text = "Display Hotels.xml";
             this.displayHotelsxmlToolStripMenuItem.Click += new System.EventHandler(this.displayHotelsxmlToolStripMenuItem_Click);
             // 
             // displayRoominventoryxmlToolStripMenuItem
             // 
             this.displayRoominventoryxmlToolStripMenuItem.Name = "displayRoominventoryxmlToolStripMenuItem";
-            this.displayRoominventoryxmlToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.displayRoominventoryxmlToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
             this.displayRoominventoryxmlToolStripMenuItem.Text = "Display Roominventory.xml";
             this.displayRoominventoryxmlToolStripMenuItem.Click += new System.EventHandler(this.displayRoominventoryxmlToolStripMenuItem_Click);
             // 
@@ -117,6 +119,13 @@
             this.btnLoadHotelsFile.Text = "Load Hotels file (Click this before clicking any other buttons)";
             this.btnLoadHotelsFile.UseVisualStyleBackColor = true;
             this.btnLoadHotelsFile.Click += new System.EventHandler(this.btnLoadHotelsFile_Click);
+            // 
+            // deSerializeThingsUseOnlyIfNeededToolStripMenuItem
+            // 
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem.Name = "deSerializeThingsUseOnlyIfNeededToolStripMenuItem";
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem.Size = new System.Drawing.Size(274, 22);
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem.Text = "DeSerialize things (Use only if needed)";
+            this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem.Click += new System.EventHandler(this.deSerializeThingsUseOnlyIfNeededToolStripMenuItem_Click);
             // 
             // CreateFilesForm
             // 
@@ -151,6 +160,7 @@
         private System.Windows.Forms.ToolStripMenuItem displayRoominventoryxmlToolStripMenuItem;
         private System.Windows.Forms.Button btnDisplayHotels;
         private System.Windows.Forms.Button btnLoadHotelsFile;
+        private System.Windows.Forms.ToolStripMenuItem deSerializeThingsUseOnlyIfNeededToolStripMenuItem;
     }
 }
 

@@ -73,6 +73,14 @@ namespace Hotel_Reservations
         {
             //Placeholder
         }
+
+        private void deSerializeThingsUseOnlyIfNeededToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Placeholder
+
+            RoomDeSerializer deSerializer = new RoomDeSerializer();
+            deSerializer.deSerialzeNow();
+        }
     }
 }
 
