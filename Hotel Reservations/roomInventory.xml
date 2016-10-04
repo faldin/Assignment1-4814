@@ -39,7 +39,7 @@
   <InventoryType>
     <Date>09072016</Date>
     <HotelId>002</HotelId>
-    <RoomType>QB</RoomType>
+    <RoomType>TB</RoomType>
     <Quantity>4</Quantity>
   </InventoryType>
   <InventoryType>
@@ -69,7 +69,7 @@
   <InventoryType>
     <Date>09122016</Date>
     <HotelId>003</HotelId>
-    <RoomType>QB</RoomType>
+    <RoomType>KB</RoomType>
     <Quantity>4</Quantity>
   </InventoryType>
   <InventoryType>

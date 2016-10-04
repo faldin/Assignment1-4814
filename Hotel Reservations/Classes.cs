@@ -1461,6 +1461,46 @@ namespace Hotel_Reservations
         }
     }
 
+    public class HotelListItem
+    {
+
+        public string ID { get; set; }
+        public string name { get; set; }
+        public string rating { get; set; }
+        
+        //public Features varfeatures { get; set; }
+        //public Distances distances { get; set; }
+        public List<Room> RoomTypes { get; set; }
+
+
+        public HotelListItem()
+        {
+            this.ID = ID;
+            this.name = name;
+            this.rating = rating;
+            
+            //this.varfeatures = new Features();
+            //this.distances = new Distances();
+            this.RoomTypes = new List<Room>();
+
+        }
+
+        public HotelListItem(string ID, string name, string rating)
+        {
+
+            this.ID = ID;
+            this.name = name;
+            this.rating = rating;
+            
+            //this.varfeatures = new Features();
+            //this.distances = new Distances();
+            this.RoomTypes = new List<Room>();
+
+
+        }
+    }
+
+
     public class Distances
     {
 
@@ -1480,6 +1520,8 @@ namespace Hotel_Reservations
 
         }
     }
+
+
 
     public class Features
     {
@@ -1505,6 +1547,7 @@ namespace Hotel_Reservations
         }
     }
 
+    
     public class RoomDeSerializer
     {
 
@@ -1537,117 +1580,120 @@ namespace Hotel_Reservations
         public bool hotelShower()
         {
 
-            List<Hotel> hotelList = new List<Hotel>(10);
+            List<HotelListItem> hotelList = new List<HotelListItem>(10);
 
             //Hotel 1
-            Hotel aHotel1 = new Hotel();
+            HotelListItem aHotel1 = new HotelListItem();
 
 
             aHotel1.name = "Old Glory";
-            aHotel1.address = "10601 sw 48 st";
-            aHotel1.id = "001";
-            aHotel1.varfeatures.laundry = true;
-            aHotel1.varfeatures.aircon = true;
-            aHotel1.varfeatures.breakfast = true;
-            aHotel1.varfeatures.shuttle = true;
-            aHotel1.distances.beach = 10;
-            aHotel1.distances.shopping = 2;
-            aHotel1.distances.airport = 7;
+            aHotel1.rating = "5";
+            aHotel1.ID = "001";
+            // aHotel1.varfeatures.laundry = true;
+            // aHotel1.varfeatures.aircon = true;
+            // aHotel1.varfeatures.breakfast = true;
+            // aHotel1.varfeatures.shuttle = true;
+            //  aHotel1.distances.beach = 10;
+            //  aHotel1.distances.shopping = 2;
+            //  aHotel1.distances.airport = 7;
+
 
 
 
             Room h1room1 = new Room();
-            h1room1.capacity = "2/5";
+            h1room1.capacity = "2/50";
             h1room1.dailyRate = 50;
             h1room1.type = "KING SIZED BED";
 
-            aHotel1.listOfRooms.Add(h1room1);
+            aHotel1.RoomTypes.Add(h1room1);
 
             Room h1room2 = new Room();
             h1room2.capacity = "1/3";
             h1room2.dailyRate = 45;
             h1room2.type = "QUEEN SIZED BED";
 
-            aHotel1.listOfRooms.Add(h1room2);
+            aHotel1.RoomTypes.Add(h1room2);
 
             Room h1room3 = new Room();
             h1room3.capacity = "1/3";
             h1room3.dailyRate = 45;
             h1room3.type = "QUEEN SIZED BED";
 
-            aHotel1.listOfRooms.Add(h1room3);
+            aHotel1.RoomTypes.Add(h1room3);
 
             Room h1room4 = new Room();
             h1room4.capacity = "2/3";
             h1room4.dailyRate = 40;
             h1room4.type = "QUEEN SIZED BED";
 
-            aHotel1.listOfRooms.Add(h1room4);
+            aHotel1.RoomTypes.Add(h1room4);
 
             hotelList.Add(aHotel1);
 
 
 
             //Hotel 2
-            Hotel aHotel2 = new Hotel();
+            HotelListItem aHotel2 = new HotelListItem();
 
 
             aHotel2.name = "Oldest Glory";
-            aHotel2.address = "66954 nw 98 st";
-            aHotel2.id = "002";
-            aHotel2.varfeatures.laundry = false;
-            aHotel2.varfeatures.aircon = true;
-            aHotel2.varfeatures.breakfast = false;
-            aHotel2.varfeatures.shuttle = true;
-            aHotel2.distances.beach = 3;
-            aHotel2.distances.shopping = 9;
-            aHotel2.distances.airport = 4;
+            aHotel2.rating = "3.5";
+            aHotel2.ID = "002";
+            //aHotel2.varfeatures.laundry = false;
+            //aHotel2.varfeatures.aircon = true;
+            //aHotel2.varfeatures.breakfast = false;
+            //aHotel2.varfeatures.shuttle = true;
+            //aHotel2.distances.beach = 3;
+            //aHotel2.distances.shopping = 9;
+            //aHotel2.distances.airport = 4;
+
 
             Room h2room1 = new Room();
             h2room1.capacity = "1/4";
             h2room1.dailyRate = 55;
             h2room1.type = "KING SIZED BED";
 
-            aHotel2.listOfRooms.Add(h2room1);
+            aHotel2.RoomTypes.Add(h2room1);
 
             Room h2room2 = new Room();
             h2room2.capacity = "1/2";
             h2room2.dailyRate = 35;
             h2room2.type = "TWIN SIZED BED";
 
-            aHotel2.listOfRooms.Add(h2room2);
+            //aHotel2.listOfRooms.Add(h2room2);
 
             Room h2room3 = new Room();
             h2room3.capacity = "1/3";
             h2room3.dailyRate = 45;
             h2room3.type = "QUEEN SIZED BED";
 
-            aHotel2.listOfRooms.Add(h2room3);
+            aHotel2.RoomTypes.Add(h2room3);
 
             Room h2room4 = new Room();
             h2room4.capacity = "2/3";
             h2room4.dailyRate = 40;
             h2room4.type = "QUEEN SIZED BED";
 
-            aHotel2.listOfRooms.Add(h2room4);
+            aHotel2.RoomTypes.Add(h2room4);
 
             hotelList.Add(aHotel2);
 
 
             //Hotel 3
-            Hotel aHotel3 = new Hotel();
+            HotelListItem aHotel3 = new HotelListItem();
 
 
             aHotel3.name = "Oldester Glory";
-            aHotel3.address = "84920 w 8 st";
-            aHotel3.id = "003";
-            aHotel3.varfeatures.laundry = false;
-            aHotel3.varfeatures.aircon = true;
-            aHotel3.varfeatures.breakfast = true;
-            aHotel3.varfeatures.shuttle = false;
-            aHotel3.distances.beach = 5;
-            aHotel3.distances.shopping = 1;
-            aHotel3.distances.airport = 2;
+            aHotel3.rating = "4";
+            aHotel3.ID = "003";
+            //aHotel3.varfeatures.laundry = false;
+            //aHotel3.varfeatures.aircon = true;
+            //aHotel3.varfeatures.breakfast = true;
+            //aHotel3.varfeatures.shuttle = false;
+            //aHotel3.distances.beach = 5;
+            //aHotel3.distances.shopping = 1;
+            //aHotel3.distances.airport = 2;
+
 
 
 
@@ -1656,46 +1702,46 @@ namespace Hotel_Reservations
             h3room1.dailyRate = 55;
             h3room1.type = "KING SIZED BED";
 
-            aHotel3.listOfRooms.Add(h3room1);
+            aHotel3.RoomTypes.Add(h3room1);
 
             Room h3room2 = new Room();
             h3room2.capacity = "1/2";
             h3room2.dailyRate = 35;
             h3room2.type = "TWIN SIZED BED";
 
-            aHotel3.listOfRooms.Add(h3room2);
+            aHotel3.RoomTypes.Add(h3room2);
 
             Room h3room3 = new Room();
             h3room3.capacity = "1/3";
             h3room3.dailyRate = 45;
             h3room3.type = "QUEEN SIZED BED";
 
-            aHotel3.listOfRooms.Add(h3room3);
+            aHotel3.RoomTypes.Add(h3room3);
 
             Room h3room4 = new Room();
             h3room4.capacity = "2/3";
             h3room4.dailyRate = 40;
             h3room4.type = "QUEEN SIZED BED";
 
-            aHotel3.listOfRooms.Add(h3room4);
+            //aHotel3.listOfRooms.Add(h3room4);
 
             hotelList.Add(aHotel3);
 
 
             //Hotel 4
-            Hotel aHotel4 = new Hotel();
+            HotelListItem aHotel4 = new HotelListItem();
 
 
             aHotel4.name = "Oldesterest Glory";
-            aHotel4.address = "82430 w 90 st";
-            aHotel4.id = "004";
-            aHotel4.varfeatures.laundry = true;
-            aHotel4.varfeatures.aircon = true;
-            aHotel4.varfeatures.breakfast = true;
-            aHotel4.varfeatures.shuttle = true;
-            aHotel4.distances.beach = 4;
-            aHotel4.distances.shopping = 3;
-            aHotel4.distances.airport = 2;
+            aHotel4.rating = "3.5";
+            aHotel4.ID = "004";
+            //aHotel4.varfeatures.laundry = true;
+            //aHotel4.varfeatures.aircon = true;
+            //aHotel4.varfeatures.breakfast = true;
+            //aHotel4.varfeatures.shuttle = true;
+            //aHotel4.distances.beach = 4;
+            //aHotel4.distances.shopping = 3;
+            //aHotel4.distances.airport = 2;
 
 
 
@@ -1704,47 +1750,47 @@ namespace Hotel_Reservations
             h4room1.dailyRate = 55;
             h4room1.type = "KING SIZED BED";
 
-            aHotel4.listOfRooms.Add(h4room1);
+            aHotel4.RoomTypes.Add(h4room1);
 
             Room h4room2 = new Room();
             h4room2.capacity = "1/2";
             h4room2.dailyRate = 35;
             h4room2.type = "TWIN SIZED BED";
 
-            aHotel4.listOfRooms.Add(h4room2);
+            aHotel4.RoomTypes.Add(h4room2);
 
             Room h4room3 = new Room();
             h4room3.capacity = "1/3";
             h4room3.dailyRate = 45;
             h4room3.type = "QUEEN SIZED BED";
 
-            aHotel4.listOfRooms.Add(h4room3);
+            aHotel4.RoomTypes.Add(h4room3);
 
             Room h4room4 = new Room();
             h4room4.capacity = "2/3";
             h4room4.dailyRate = 40;
             h4room4.type = "QUEEN SIZED BED";
 
-            aHotel4.listOfRooms.Add(h4room4);
+            aHotel4.RoomTypes.Add(h4room4);
 
             hotelList.Add(aHotel4);
 
 
 
             //Hotel 5
-            Hotel aHotel5 = new Hotel();
+            HotelListItem aHotel5 = new HotelListItem();
 
 
             aHotel5.name = "Oldesteresting Glory";
-            aHotel5.address = "11832 nw 12 st";
-            aHotel5.id = "005";
-            aHotel5.varfeatures.laundry = true;
-            aHotel5.varfeatures.aircon = true;
-            aHotel5.varfeatures.breakfast = false;
-            aHotel5.varfeatures.shuttle = false;
-            aHotel5.distances.beach = 4;
-            aHotel5.distances.shopping = 3;
-            aHotel5.distances.airport = 3;
+            aHotel5.rating = "4.5";
+            aHotel5.ID = "005";
+            //aHotel5.varfeatures.laundry = true;
+            //aHotel5.varfeatures.aircon = true;
+            //aHotel5.varfeatures.breakfast = false;
+            //aHotel5.varfeatures.shuttle = false;
+            //aHotel5.distances.beach = 4;
+            //aHotel5.distances.shopping = 3;
+            //aHotel5.distances.airport = 3;
 
 
 
@@ -1753,46 +1799,46 @@ namespace Hotel_Reservations
             h5room1.dailyRate = 45;
             h5room1.type = "KING SIZED BED";
 
-            aHotel5.listOfRooms.Add(h5room1);
+            //aHotel5.listOfRooms.Add(h5room1);
 
             Room h5room2 = new Room();
             h5room2.capacity = "1/2";
             h5room2.dailyRate = 35;
             h5room2.type = "TWIN SIZED BED";
 
-            aHotel5.listOfRooms.Add(h5room2);
+            aHotel5.RoomTypes.Add(h5room2);
 
             Room h5room3 = new Room();
             h5room3.capacity = "2/3";
             h5room3.dailyRate = 55;
             h5room3.type = "QUEEN SIZED BED";
 
-            aHotel5.listOfRooms.Add(h5room3);
+            aHotel5.RoomTypes.Add(h5room3);
 
             Room h5room4 = new Room();
             h5room4.capacity = "2/3";
             h5room4.dailyRate = 40;
             h5room4.type = "QUEEN SIZED BED";
 
-            aHotel5.listOfRooms.Add(h5room4);
+            aHotel5.RoomTypes.Add(h5room4);
 
             hotelList.Add(aHotel5);
 
 
             //Hotel 6
-            Hotel aHotel6 = new Hotel();
+            HotelListItem aHotel6 = new HotelListItem();
 
 
             aHotel6.name = "Oldesteresting Glories";
-            aHotel6.address = "11234 nw 14 st";
-            aHotel6.id = "006";
-            aHotel6.varfeatures.laundry = false;
-            aHotel6.varfeatures.aircon = false;
-            aHotel6.varfeatures.breakfast = false;
-            aHotel6.varfeatures.shuttle = false;
-            aHotel6.distances.beach = 4;
-            aHotel6.distances.shopping = 3;
-            aHotel6.distances.airport = 3;
+            aHotel6.rating = "4";
+            aHotel6.ID = "006";
+            //aHotel6.varfeatures.laundry = false;
+            //aHotel6.varfeatures.aircon = false;
+            //aHotel6.varfeatures.breakfast = false;
+            //aHotel6.varfeatures.shuttle = false;
+            //aHotel6.distances.beach = 4;
+            //aHotel6.distances.shopping = 3;
+            //aHotel6.distances.airport = 3;
 
 
 
@@ -1801,46 +1847,46 @@ namespace Hotel_Reservations
             h6room1.dailyRate = 45;
             h6room1.type = "KING SIZED BED";
 
-            aHotel6.listOfRooms.Add(h6room1);
+            //aHotel6.listOfRooms.Add(h6room1);
 
             Room h6room2 = new Room();
             h6room2.capacity = "1/2";
             h6room2.dailyRate = 35;
             h6room2.type = "TWIN SIZED BED";
 
-            aHotel6.listOfRooms.Add(h6room2);
+            aHotel6.RoomTypes.Add(h6room2);
 
             Room h6room3 = new Room();
             h6room3.capacity = "2/3";
             h6room3.dailyRate = 55;
             h6room3.type = "QUEEN SIZED BED";
 
-            aHotel6.listOfRooms.Add(h6room3);
+            aHotel6.RoomTypes.Add(h6room3);
 
             Room h6room4 = new Room();
             h6room4.capacity = "2/3";
             h6room4.dailyRate = 40;
             h6room4.type = "QUEEN SIZED BED";
 
-            aHotel6.listOfRooms.Add(h6room4);
+            aHotel6.RoomTypes.Add(h6room4);
 
             hotelList.Add(aHotel6);
 
 
             //Hotel 7
-            Hotel aHotel7 = new Hotel();
+            HotelListItem aHotel7 = new HotelListItem();
 
 
             aHotel7.name = "Oldesteresting Gloriesest";
-            aHotel7.address = "98274 nw 16 st";
-            aHotel7.id = "007";
-            aHotel7.varfeatures.laundry = true;
-            aHotel7.varfeatures.aircon = false;
-            aHotel7.varfeatures.breakfast = false;
-            aHotel7.varfeatures.shuttle = false;
-            aHotel7.distances.beach = 5;
-            aHotel7.distances.shopping = 3;
-            aHotel7.distances.airport = 4;
+            aHotel7.rating = "5";
+            aHotel7.ID = "007";
+            //aHotel7.varfeatures.laundry = true;
+            //aHotel7.varfeatures.aircon = false;
+            //aHotel7.varfeatures.breakfast = false;
+            //aHotel7.varfeatures.shuttle = false;
+            //aHotel7.distances.beach = 5;
+            //aHotel7.distances.shopping = 3;
+            //aHotel7.distances.airport = 4;
 
 
 
@@ -1849,47 +1895,47 @@ namespace Hotel_Reservations
             h7room1.dailyRate = 45;
             h7room1.type = "KING SIZED BED";
 
-            aHotel7.listOfRooms.Add(h7room1);
+            aHotel7.RoomTypes.Add(h7room1);
 
             Room h7room2 = new Room();
             h7room2.capacity = "1/2";
             h7room2.dailyRate = 35;
             h7room2.type = "TWIN SIZED BED";
 
-            aHotel7.listOfRooms.Add(h7room2);
+            aHotel7.RoomTypes.Add(h7room2);
 
             Room h7room3 = new Room();
             h7room3.capacity = "2/3";
             h7room3.dailyRate = 55;
             h7room3.type = "QUEEN SIZED BED";
 
-            aHotel7.listOfRooms.Add(h7room3);
+            aHotel7.RoomTypes.Add(h7room3);
 
             Room h7room4 = new Room();
             h7room4.capacity = "2/3";
             h7room4.dailyRate = 40;
             h7room4.type = "QUEEN SIZED BED";
 
-            aHotel7.listOfRooms.Add(h7room4);
+            aHotel7.RoomTypes.Add(h7room4);
 
             hotelList.Add(aHotel7);
 
 
 
             //Hotel 8
-            Hotel aHotel8 = new Hotel();
+            HotelListItem aHotel8 = new HotelListItem();
 
 
             aHotel8.name = "Oldesteresting Gloriesester";
-            aHotel8.address = "11234 nw 14 st";
-            aHotel8.id = "008";
-            aHotel8.varfeatures.laundry = false;
-            aHotel8.varfeatures.aircon = false;
-            aHotel8.varfeatures.breakfast = true;
-            aHotel8.varfeatures.shuttle = true;
-            aHotel8.distances.beach = 7;
-            aHotel8.distances.shopping = 9;
-            aHotel8.distances.airport = 600;
+            aHotel8.rating = "4";
+            aHotel8.ID = "008";
+            //aHotel8.varfeatures.laundry = false;
+            //aHotel8.varfeatures.aircon = false;
+            //aHotel8.varfeatures.breakfast = true;
+            //aHotel8.varfeatures.shuttle = true;
+            //aHotel8.distances.beach = 7;
+            //aHotel8.distances.shopping = 9;
+            //aHotel8.distances.airport = 600;
 
 
 
@@ -1898,46 +1944,46 @@ namespace Hotel_Reservations
             h8room1.dailyRate = 45;
             h8room1.type = "KING SIZED BED";
 
-            aHotel8.listOfRooms.Add(h8room1);
+            aHotel8.RoomTypes.Add(h8room1);
 
             Room h8room2 = new Room();
             h8room2.capacity = "1/2";
             h8room2.dailyRate = 35;
             h8room2.type = "TWIN SIZED BED";
 
-            aHotel8.listOfRooms.Add(h8room2);
+            aHotel8.RoomTypes.Add(h8room2);
 
             Room h8room3 = new Room();
             h8room3.capacity = "2/3";
             h8room3.dailyRate = 55;
             h8room3.type = "QUEEN SIZED BED";
 
-            aHotel8.listOfRooms.Add(h8room3);
+            aHotel8.RoomTypes.Add(h8room3);
 
             Room h8room4 = new Room();
             h8room4.capacity = "2/3";
             h8room4.dailyRate = 40;
             h8room4.type = "QUEEN SIZED BED";
 
-            aHotel8.listOfRooms.Add(h8room4);
+            aHotel8.RoomTypes.Add(h8room4);
 
             hotelList.Add(aHotel8);
 
 
             //Hotel 9
-            Hotel aHotel9 = new Hotel();
+            HotelListItem aHotel9 = new HotelListItem();
 
 
             aHotel9.name = "Oldesteresting Gloriesesterest";
-            aHotel9.address = "11234 nw 14 st";
-            aHotel9.id = "009";
-            aHotel9.varfeatures.laundry = true;
-            aHotel9.varfeatures.aircon = true;
-            aHotel9.varfeatures.breakfast = false;
-            aHotel9.varfeatures.shuttle = false;
-            aHotel9.distances.beach = 4;
-            aHotel9.distances.shopping = 3;
-            aHotel9.distances.airport = 3;
+            aHotel9.rating = "3.5";
+            aHotel9.ID = "009";
+            //aHotel9.varfeatures.laundry = true;
+            //aHotel9.varfeatures.aircon = true;
+            //aHotel9.varfeatures.breakfast = false;
+            //aHotel9.varfeatures.shuttle = false;
+            //aHotel9.distances.beach = 4;
+            //aHotel9.distances.shopping = 3;
+            //aHotel9.distances.airport = 3;
 
 
 
@@ -1946,47 +1992,47 @@ namespace Hotel_Reservations
             h9room1.dailyRate = 45;
             h9room1.type = "KING SIZED BED";
 
-            aHotel9.listOfRooms.Add(h9room1);
+            aHotel9.RoomTypes.Add(h9room1);
 
             Room h9room2 = new Room();
             h9room2.capacity = "1/2";
             h9room2.dailyRate = 35;
             h9room2.type = "TWIN SIZED BED";
-
-            aHotel9.listOfRooms.Add(h9room2);
+       
+            aHotel9.RoomTypes.Add(h9room2);
 
             Room h9room3 = new Room();
             h9room3.capacity = "2/3";
             h9room3.dailyRate = 55;
             h9room3.type = "QUEEN SIZED BED";
 
-            aHotel9.listOfRooms.Add(h9room3);
+            aHotel9.RoomTypes.Add(h9room3);
 
             Room h9room4 = new Room();
             h9room4.capacity = "2/3";
             h9room4.dailyRate = 40;
             h9room4.type = "QUEEN SIZED BED";
 
-            aHotel9.listOfRooms.Add(h9room4);
+            aHotel9.RoomTypes.Add(h9room4);
 
             hotelList.Add(aHotel9);
 
 
 
             //Hotel 10
-            Hotel aHotel10 = new Hotel();
+            HotelListItem aHotel10 = new HotelListItem();
 
 
             aHotel10.name = "Oldesteresting Gloriesesteresters";
-            aHotel10.address = "13370 sw 9 st";
-            aHotel10.id = "010";
-            aHotel10.varfeatures.laundry = true;
-            aHotel10.varfeatures.aircon = true;
-            aHotel10.varfeatures.breakfast = true;
-            aHotel10.varfeatures.shuttle = true;
-            aHotel10.distances.beach = 4;
-            aHotel10.distances.shopping = 5;
-            aHotel10.distances.airport = 6;
+            aHotel10.rating = "5";
+            aHotel10.ID = "010";
+            //aHotel10.varfeatures.laundry = true;
+            //aHotel10.varfeatures.aircon = true;
+            //aHotel10.varfeatures.breakfast = true;
+            //aHotel10.varfeatures.shuttle = true;
+            //aHotel10.distances.beach = 4;
+            //aHotel10.distances.shopping = 5;
+            //aHotel10.distances.airport = 6;
 
 
 
@@ -1995,28 +2041,28 @@ namespace Hotel_Reservations
             h10room1.dailyRate = 45;
             h10room1.type = "KING SIZED BED";
 
-            aHotel10.listOfRooms.Add(h10room1);
+            aHotel10.RoomTypes.Add(h10room1);
 
             Room h10room2 = new Room();
             h10room2.capacity = "1/2";
             h10room2.dailyRate = 35;
             h10room2.type = "TWIN SIZED BED";
 
-            aHotel10.listOfRooms.Add(h10room2);
+            aHotel10.RoomTypes.Add(h10room2);
 
             Room h10room3 = new Room();
             h10room3.capacity = "2/3";
             h10room3.dailyRate = 55;
             h10room3.type = "QUEEN SIZED BED";
 
-            aHotel10.listOfRooms.Add(h10room3);
+            aHotel10.RoomTypes.Add(h10room3);
 
             Room h10room4 = new Room();
             h10room4.capacity = "2/3";
             h10room4.dailyRate = 40;
             h10room4.type = "QUEEN SIZED BED";
 
-            aHotel10.listOfRooms.Add(h10room4);
+            aHotel10.RoomTypes.Add(h10room4);
 
             hotelList.Add(aHotel10);
 

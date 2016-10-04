@@ -72,6 +72,11 @@ namespace Hotel_Reservations
 
         private void btnDisplayHotels_Click(object sender, EventArgs e)
         {
+
+            BrowserForm frm = new BrowserForm();
+            frm.URL = "newhotels.xml";
+            frm.ShowDialog();
+
             //Placeholder
         }
 
