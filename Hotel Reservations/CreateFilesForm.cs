@@ -68,6 +68,8 @@ namespace Hotel_Reservations
         {
             ShowHotels hotelShow = new ShowHotels();
             hotelShow.hotelShower();
+
+            //lblStatus.Text("")
         }
 
         private void btnDisplayHotels_Click(object sender, EventArgs e)
@@ -77,16 +79,19 @@ namespace Hotel_Reservations
             frm.URL = "newhotels.xml";
             frm.ShowDialog();
 
-            //Placeholder
+
+            doThatHTML htmlMagic = new doThatHTML();
+            htmlMagic.doTheHTML();
+
         }
 
         private void deSerializeThingsUseOnlyIfNeededToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Placeholder
-
             RoomDeSerializer deSerializer = new RoomDeSerializer();
             deSerializer.deSerialzeNow();
         }
+
+
     }
 }
 

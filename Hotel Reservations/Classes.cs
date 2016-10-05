@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Xml.Xsl;
 
 namespace Hotel_Reservations
 {
@@ -1580,6 +1581,8 @@ namespace Hotel_Reservations
         public bool hotelShower()
         {
 
+
+
             List<HotelListItem> hotelList = new List<HotelListItem>(10);
 
             //Hotel 1
@@ -1998,7 +2001,7 @@ namespace Hotel_Reservations
             h9room2.capacity = "1/2";
             h9room2.dailyRate = 35;
             h9room2.type = "TWIN SIZED BED";
-       
+
             aHotel9.RoomTypes.Add(h9room2);
 
             Room h9room3 = new Room();
@@ -2072,8 +2075,27 @@ namespace Hotel_Reservations
             serializer.Serialize(writer, hotelList);
 
             return true;
+
         }
 
+
+      
+    }
+
+
+    public class doThatHTML
+    {
+
+        public bool doTheHTML()
+        {
+
+            var xslMagic = new XslCompiledTransform();
+            xslMagic.Load("../../_hotels.xslt");
+            xslMagic.Transform("../../newhotels.xml", "../../horrayforhtml.html");
+
+
+            return true;
+        }
 
     }
 
