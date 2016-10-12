@@ -933,6 +933,7 @@ namespace Hotel_Reservations
             aHotel1.name = "Old Glory";
             aHotel1.address = "10601 sw 48 st";
             aHotel1.id = "001";
+            aHotel1.rating = "4.5";
             aHotel1.varfeatures.laundry = true;
             aHotel1.varfeatures.aircon = true;
             aHotel1.varfeatures.breakfast = true;
@@ -982,6 +983,7 @@ namespace Hotel_Reservations
             aHotel2.name = "Oldest Glory";
             aHotel2.address = "66954 nw 98 st";
             aHotel2.id = "002";
+            aHotel2.rating = "5";
             aHotel2.varfeatures.laundry = false;
             aHotel2.varfeatures.aircon = true;
             aHotel2.varfeatures.breakfast = false;
@@ -1028,6 +1030,7 @@ namespace Hotel_Reservations
             aHotel3.name = "Oldester Glory";
             aHotel3.address = "84920 w 8 st";
             aHotel3.id = "003";
+            aHotel3.rating = "3";
             aHotel3.varfeatures.laundry = false;
             aHotel3.varfeatures.aircon = true;
             aHotel3.varfeatures.breakfast = true;
@@ -1076,6 +1079,7 @@ namespace Hotel_Reservations
             aHotel4.name = "Oldesterest Glory";
             aHotel4.address = "82430 w 90 st";
             aHotel4.id = "004";
+            aHotel4.rating = "2.5";
             aHotel4.varfeatures.laundry = true;
             aHotel4.varfeatures.aircon = true;
             aHotel4.varfeatures.breakfast = true;
@@ -1125,6 +1129,7 @@ namespace Hotel_Reservations
             aHotel5.name = "Oldesteresting Glory";
             aHotel5.address = "11832 nw 12 st";
             aHotel5.id = "005";
+            aHotel5.rating = "4.5";
             aHotel5.varfeatures.laundry = true;
             aHotel5.varfeatures.aircon = true;
             aHotel5.varfeatures.breakfast = false;
@@ -1173,6 +1178,7 @@ namespace Hotel_Reservations
             aHotel6.name = "Oldesteresting Glories";
             aHotel6.address = "11234 nw 14 st";
             aHotel6.id = "006";
+            aHotel6.rating = "4";
             aHotel6.varfeatures.laundry = false;
             aHotel6.varfeatures.aircon = false;
             aHotel6.varfeatures.breakfast = false;
@@ -1221,6 +1227,7 @@ namespace Hotel_Reservations
             aHotel7.name = "Oldesteresting Gloriesest";
             aHotel7.address = "98274 nw 16 st";
             aHotel7.id = "007";
+            aHotel7.rating = "4.5";
             aHotel7.varfeatures.laundry = true;
             aHotel7.varfeatures.aircon = false;
             aHotel7.varfeatures.breakfast = false;
@@ -1270,6 +1277,7 @@ namespace Hotel_Reservations
             aHotel8.name = "Oldesteresting Gloriesester";
             aHotel8.address = "11234 nw 14 st";
             aHotel8.id = "008";
+            aHotel8.rating = "5";
             aHotel8.varfeatures.laundry = false;
             aHotel8.varfeatures.aircon = false;
             aHotel8.varfeatures.breakfast = true;
@@ -1318,6 +1326,7 @@ namespace Hotel_Reservations
             aHotel9.name = "Oldesteresting Gloriesesterest";
             aHotel9.address = "11234 nw 14 st";
             aHotel9.id = "009";
+            aHotel9.rating = "4";
             aHotel9.varfeatures.laundry = true;
             aHotel9.varfeatures.aircon = true;
             aHotel9.varfeatures.breakfast = false;
@@ -1367,6 +1376,7 @@ namespace Hotel_Reservations
             aHotel10.name = "Oldesteresting Gloriesesteresters";
             aHotel10.address = "13370 sw 9 st";
             aHotel10.id = "010";
+            aHotel10.rating = "3";
             aHotel10.varfeatures.laundry = true;
             aHotel10.varfeatures.aircon = true;
             aHotel10.varfeatures.breakfast = true;
@@ -1428,10 +1438,12 @@ namespace Hotel_Reservations
 
     public class Hotel
     {
+        
 
         public string name { get; set; }
         public string address { get; set; }
         public string id { get; set; }
+        public string rating { get; set; }
         public Features varfeatures { get; set; }
         public Distances distances { get; set; }
         public List<Room> listOfRooms { get; set; }
@@ -1442,18 +1454,20 @@ namespace Hotel_Reservations
             this.name = name;
             this.address = address;
             this.id = id;
+            this.rating = rating;
             this.varfeatures = new Features();
             this.distances = new Distances();
             this.listOfRooms = new List<Room>();
 
         }
 
-        public Hotel(string name, string address, string id)
+        public Hotel(string name, string address, string id, string rating)
         {
 
             this.name = name;
             this.address = address;
             this.id = id;
+            this.rating = rating;
             this.varfeatures = new Features();
             this.distances = new Distances();
             this.listOfRooms = new List<Room>();

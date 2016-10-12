@@ -67,3 +67,10 @@ C:\Users\Farah\Source\Repos\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel 
 C:\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
 C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
 C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+C:\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
+C:\Assignment1-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache

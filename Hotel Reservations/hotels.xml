@@ -4,6 +4,7 @@
     <name>Old Glory</name>
     <address>10601 sw 48 st</address>
     <id>001</id>
+    <rating>4.5</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>true</aircon>
@@ -42,6 +43,7 @@
     <name>Oldest Glory</name>
     <address>66954 nw 98 st</address>
     <id>002</id>
+    <rating>5</rating>
     <varfeatures>
       <laundry>false</laundry>
       <aircon>true</aircon>
@@ -80,6 +82,7 @@
     <name>Oldester Glory</name>
     <address>84920 w 8 st</address>
     <id>003</id>
+    <rating>3</rating>
     <varfeatures>
       <laundry>false</laundry>
       <aircon>true</aircon>
@@ -118,6 +121,7 @@
     <name>Oldesterest Glory</name>
     <address>82430 w 90 st</address>
     <id>004</id>
+    <rating>2.5</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>true</aircon>
@@ -156,6 +160,7 @@
     <name>Oldesteresting Glory</name>
     <address>11832 nw 12 st</address>
     <id>005</id>
+    <rating>4.5</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>true</aircon>
@@ -194,6 +199,7 @@
     <name>Oldesteresting Glories</name>
     <address>11234 nw 14 st</address>
     <id>006</id>
+    <rating>4</rating>
     <varfeatures>
       <laundry>false</laundry>
       <aircon>false</aircon>
@@ -232,6 +238,7 @@
     <name>Oldesteresting Gloriesest</name>
     <address>98274 nw 16 st</address>
     <id>007</id>
+    <rating>4.5</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>false</aircon>
@@ -270,6 +277,7 @@
     <name>Oldesteresting Gloriesester</name>
     <address>11234 nw 14 st</address>
     <id>008</id>
+    <rating>5</rating>
     <varfeatures>
       <laundry>false</laundry>
       <aircon>false</aircon>
@@ -308,6 +316,7 @@
     <name>Oldesteresting Gloriesesterest</name>
     <address>11234 nw 14 st</address>
     <id>009</id>
+    <rating>4</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>true</aircon>
@@ -346,6 +355,7 @@
     <name>Oldesteresting Gloriesesteresters</name>
     <address>13370 sw 9 st</address>
     <id>010</id>
+    <rating>3</rating>
     <varfeatures>
       <laundry>true</laundry>
       <aircon>true</aircon>
