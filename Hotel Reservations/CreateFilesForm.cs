@@ -76,7 +76,7 @@ namespace Hotel_Reservations
         {
 
             BrowserForm frm = new BrowserForm();
-            frm.URL = "newhotels.xml";
+            frm.URL = "hoorayforhtml.html";
             frm.ShowDialog();
 
 

@@ -2070,6 +2070,36 @@ namespace Hotel_Reservations
             hotelList.Add(aHotel10);
 
 
+            for (int i = 1; i >= 10; i++)
+            {
+                for (int o = 1; o >= 4; o++)
+                {
+
+                    if (h(i)room(o).type = "KB"){
+
+                    h(i)room(o).type = "KING SIZED BED";
+
+                    }
+
+                    else if (h(i)room(o).type = "QB"){
+
+                    h(i)room(o).type = "QUEEN SIZED BED";
+
+                    }
+
+
+                    else {
+
+                    h(i)room(o).type = "TWIN SIZED BED";
+
+                    }
+                }
+                
+
+
+            }
+
+
             StreamWriter writer = new StreamWriter("../../newhotels.xml");
             XmlSerializer serializer = new XmlSerializer(hotelList.GetType());
             serializer.Serialize(writer, hotelList);
