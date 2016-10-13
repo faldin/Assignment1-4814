@@ -1597,7 +1597,21 @@ namespace Hotel_Reservations
 
 
 
+            List<Hotel> hotellist = new List<Hotel>(10);
             List<HotelListItem> itemList = new List<HotelListItem>(10);
+            
+            foreach (Hotel H in hotellist)
+            {
+                HotelListItem AnotherHotel = new HotelListItem();
+                AnotherHotel.ID = H.id;
+                AnotherHotel.name = H.name;
+                AnotherHotel.rating = H.rating;
+                AnotherHotel.RoomTypes = H.listOfRooms;
+
+
+            }
+            return true;
+
 
 
 
