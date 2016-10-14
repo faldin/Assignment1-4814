@@ -1566,13 +1566,15 @@ namespace Hotel_Reservations
     public class RoomDeSerializer
     {
 
+        public static List<Hotel> hotellist = new List<Hotel>();
+
         public bool deSerialzeNow()
         {
 
 
 
             XmlSerializer ser = new XmlSerializer(typeof(List<Hotel>));
-            List<Hotel> hotellist = new List<Hotel>();
+
             using (XmlReader reader = XmlReader.Create(@"..\..\Hotels.xml"))
             {
                 hotellist = (List<Hotel>)ser.Deserialize(reader);
@@ -1597,10 +1599,10 @@ namespace Hotel_Reservations
 
 
 
-            List<Hotel> hotellist = new List<Hotel>(10);
+
             List<HotelListItem> itemList = new List<HotelListItem>(10);
             
-            foreach (Hotel H in hotellist)
+            foreach (Hotel H in RoomDeSerializer.hotellist)
             {
                 HotelListItem AnotherHotel = new HotelListItem();
                 AnotherHotel.ID = H.id;
