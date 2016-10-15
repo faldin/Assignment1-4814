@@ -75,14 +75,14 @@ namespace Hotel_Reservations
         private void btnDisplayHotels_Click(object sender, EventArgs e)
         {
 
-            BrowserForm frm = new BrowserForm();
-            frm.URL = "hoorayforhtml.html";
-            frm.ShowDialog();
-
-
             doThatHTML htmlMagic = new doThatHTML();
             htmlMagic.doTheHTML();
 
+            BrowserForm frm = new BrowserForm();
+            frm.URL = "hoorayforhtml.html";
+            frm.ShowDialog();
+            
+         
         }
 
         private void deSerializeThingsUseOnlyIfNeededToolStripMenuItem_Click(object sender, EventArgs e)

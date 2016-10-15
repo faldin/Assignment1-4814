@@ -893,6 +893,7 @@ namespace Hotel_Reservations
             this.capacity = capacity;
 
         }
+
     }
 
     public class InventoryType
@@ -1483,9 +1484,8 @@ namespace Hotel_Reservations
         public string name { get; set; }
         public string rating { get; set; }
 
-        //public Features varfeatures { get; set; }
-        //public Distances distances { get; set; }
         public List<Room> RoomTypes { get; set; }
+
 
 
         public HotelListItem()
@@ -1493,26 +1493,10 @@ namespace Hotel_Reservations
             this.ID = ID;
             this.name = name;
             this.rating = rating;
-
-            //this.varfeatures = new Features();
-            //this.distances = new Distances();
             this.RoomTypes = new List<Room>();
 
         }
 
-        public HotelListItem(string ID, string name, string rating)
-        {
-
-            this.ID = ID;
-            this.name = name;
-            this.rating = rating;
-
-            //this.varfeatures = new Features();
-            //this.distances = new Distances();
-            this.RoomTypes = new List<Room>();
-
-
-        }
     }
 
 
@@ -1600,26 +1584,47 @@ namespace Hotel_Reservations
 
 
 
-            List<HotelListItem> itemList = new List<HotelListItem>(10);
+           List<HotelListItem> itemList = new List<HotelListItem>(10);
             
             foreach (Hotel H in RoomDeSerializer.hotellist)
             {
                 HotelListItem AnotherHotel = new HotelListItem();
+
                 AnotherHotel.ID = H.id;
                 AnotherHotel.name = H.name;
                 AnotherHotel.rating = H.rating;
+
                 AnotherHotel.RoomTypes = H.listOfRooms;
 
+                List<Room> list = new List<Room>();
+                Room Y = new Room();
+
+                foreach (Room R in AnotherHotel.RoomTypes)
+                {
+                    Y = R;
+                    if (R.type.Equals("QB"))
+                    {
+                        Y.type = roomTypes.QueenBed;
+                    }
+
+                    else if (R.type.Equals("TB"))
+                    {
+                        Y.type = roomTypes.TwinBed;
+                    }
+
+                    else if (R.type.Equals("KB"))
+                    {
+                        Y.type = roomTypes.KingBed;
+                    }
+
+                    list.Add(Y); 
+                }
+
+                AnotherHotel.RoomTypes = list;
+
+                itemList.Add(AnotherHotel);
 
             }
-            return true;
-
-
-
-
-
-
-
 
             StreamWriter writer = new StreamWriter("../../newhotels.xml");
             XmlSerializer serializer = new XmlSerializer(itemList.GetType());
@@ -1651,6 +1656,16 @@ namespace Hotel_Reservations
 
             return true;
         }
+
+    }
+
+    public class roomTypes
+    {
+
+        public static string QueenBed = "Queen bed";
+        public static string KingBed = "Queen bed";
+        public static string TwinBed = "Twin bed";
+
 
     }
 

@@ -39,19 +39,22 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 
       <html>
         <body>
-          <table border ="1" cellspacing ="0" cellpadding="3" style ="width:90%">
-            <tr>
-              <th>Name</th>
-              <th>Rating</th>
-              <th>Average Price Per Night</th>
-            
+          <table border="1">
+            <tr bgcolor="#9aff32">
+              <th style="text-align:left">Name</th>
+              <th style="text-align:left">Rating</th>
+              <th style="text-align:left">Price Per Night</th>
             </tr>
-            
-              <xsl:apply-templates select="../../hoorayforhtml.html">
-            
-            </xsl:apply-templates>
-              
-          
+            <xsl:for-each select="catalog/cd">
+              <tr>
+                <td>
+                  <xsl:value-of select="title"/>
+                </td>
+                <td>
+                  <xsl:value-of select="artist"/>
+                </td>
+              </tr>
+            </xsl:for-each>
           </table>
       
       </body>
@@ -59,24 +62,27 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   </html>
         
     </xsl:template>
-<xsl:template match="Hotel">
+<xsl:template match="HotelListItem">
             
               <tr>
                 <td>
-                  <xsl:value-of select="Name"/>
+                  <xsl:value-of select="ID"/>
                 </td>
                 <td>
-              <xsl:apply-templates select="Rating"/>
+                  <xsl:value-of select="name"/>
                </td>
                 
                 <td>
-              <xsl:apply-templates select="RoomType"/>
+              <xsl:apply-templates select="rating"/>
               </td>
+                <td>
+                  <xsl:apply-templates select="RoomTypes"/>
+                </td>
             </tr>
 
 </xsl:template>
   
-  <xsl:template match ="Rating">
+  <xsl:template match ="rating">
     
             <xsl:choose>
             <xsl:when test = "Rating = 1">
@@ -131,13 +137,13 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 <xsl:template match ="RoomType">
   
               <td>
-                <xsl:value-of select="Name"/>
+                <xsl:value-of select="type"/>
               </td>
             <td>
-                <xsl:value-of select="DailyRate"/>
+                <xsl:value-of select="dailyRate"/>
               </td>
             <td>
-                <xsl:value-of select="Capacity"/>
+                <xsl:value-of select="capacity"/>
               </td>
               
 
