@@ -1422,7 +1422,7 @@ namespace Hotel_Reservations
             StreamWriter writer = new StreamWriter("../../hotels.xml");
             XmlSerializer serializer = new XmlSerializer(hotelList.GetType());
             serializer.Serialize(writer, hotelList);
-
+            writer.Close();
 
 
 
@@ -1626,7 +1626,7 @@ namespace Hotel_Reservations
 
             }
 
-            StreamWriter writer = new StreamWriter("../../newhotels.xml");
+            StreamWriter writer = new StreamWriter("../../newhotel.xml");
             XmlSerializer serializer = new XmlSerializer(itemList.GetType());
             serializer.Serialize(writer, itemList);
             writer.Close();
@@ -1663,7 +1663,7 @@ namespace Hotel_Reservations
     {
 
         public static string QueenBed = "Queen bed";
-        public static string KingBed = "Queen bed";
+        public static string KingBed = "King Bed";
         public static string TwinBed = "Twin bed";
 
 
