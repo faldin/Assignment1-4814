@@ -74,3 +74,13 @@ C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.
 C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
 C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
 C:\Assignment1-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe.config
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel Reservations.exe
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel Reservations.pdb
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\bin\Debug\Hotel Reservations.exe
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\bin\Debug\Hotel Reservations.pdb
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.BrowserForm.resources
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.CreateFilesForm.resources
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel_Reservations.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\Assignment2.3-4814\Hotel Reservations\obj\Debug\Hotel Reservations.csproj.GenerateResource.Cache

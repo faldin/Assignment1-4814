@@ -1650,7 +1650,7 @@ namespace Hotel_Reservations
         {
 
             var xslMagic = new XslCompiledTransform();
-            xslMagic.Load("../../_hotels.xslt");
+            xslMagic.Load("../../hotels.xslt");
             xslMagic.Transform("../../newhotels.xml", "../../horrayforhtml.html");
 
 
